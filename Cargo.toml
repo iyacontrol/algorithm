@@ -1,0 +1,6 @@
+[package]
+name = "algorithm"
+version = "0.1.0"
+authors = ["gaohj <gaohj2015@yeah.net>"]
+
+[dependencies]
