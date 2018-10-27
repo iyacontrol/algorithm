@@ -1,4 +1,5 @@
 pub mod sort {
+    // 快速排序
      pub fn quick_sort(vec : &mut Vec<u32>, low: usize, high: usize ) {
         if low < high {
             let mut i  = low;
@@ -25,5 +26,22 @@ pub mod sort {
             quick_sort(vec, i+1, high);
         }
     
+    }
+
+    // 冒泡排序
+    pub fn bupple(vec : &mut Vec<u32>){
+        let len = vec.len();
+        let mut j = 0;
+
+        while j < len - 1 {
+            let mut i = 0;
+            while i < len -1 - j {
+                if vec[i] > vec[i+1] {
+                    vec.swap(i, i+1);
+                }
+                i += 1;
+            }
+            j += 1;
+        }
     }
 }
