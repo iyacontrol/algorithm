@@ -1,6 +1,6 @@
-extern crate algorithm;
+mod sort;
 
-pub use algorithm::sort::*;
+use sort::*;
 
 fn main() { 
     let mut primes: Vec<u32> = vec![3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
