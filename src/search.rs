@@ -6,8 +6,7 @@ pub fn binary_search(vec: Vec<i32>, val: i32) -> i32 {
     while low <= high {
         mid = (high - low) / 2;
         if vec[mid] == val {
-            let ret = mid as i32;
-            return ret;
+            return mid as i32;
         } else if vec[mid] > val {
             high = mid - 1;
         } else if vec[mid] < val {
