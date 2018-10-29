@@ -14,7 +14,7 @@ fn main() {
     // }
 
     let vectors: Vec<i32> = vec![1, 2, 3, 4, 5];
-    println!("{}", binary_search(vectors, 3));
+    println!("{}", binary_search(vectors, 6));
 
     let vectors: Vec<i32> = vec![1, 2, 3, 4, 5];
     println!("{}", sequence_search(vectors, 3));
